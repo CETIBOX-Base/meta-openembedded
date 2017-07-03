@@ -9,7 +9,7 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=0636e73ff0215e8d672dc4c32c317bb3 \
 
 inherit klibc
 
-SRC_URI = "git://git.infradead.org/mtd-utils.git;tag=b7455d847ab4f9eeeb6a729efc306bfda7bddc99 \
+SRC_URI = "git://git.infradead.org/mtd-utils.git \
              file://0001-Makefile-only-build-ubi-utils.patch \
              file://0002-common.mk-for-klibc-CC-is-klcc.patch \
              file://0003-libubi.c-add-klibc-specific-fixes.patch \
@@ -17,6 +17,7 @@ SRC_URI = "git://git.infradead.org/mtd-utils.git;tag=b7455d847ab4f9eeeb6a729efc3
              file://0005-common.h-klibc-fixes-2.patch \
              file://0006-libiniparser-remove-unused-function-needing-float.patch \
              "
+SRCREV = "b7455d847ab4f9eeeb6a729efc306bfda7bddc99"
 
 S = "${WORKDIR}/git/"
 
